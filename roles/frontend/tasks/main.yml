@@ -15,12 +15,12 @@
     dest: /etc/nginx/nginx.conf
 
 - name: Remove nginx directory
-  ansible_builtin.file:
+  ansible.builtin.file:
     path: /usr/share/nginx/html
     state: absent
 
 - name: Create nginx directory
-  ansible_builtin.file:
+  ansible.builtin.file:
     path: /usr/share/nginx/html
     state: directory
 
