@@ -1,8 +1,3 @@
-#echo Start MongoDB service
-#systemctl enable mongod &>>$log_file
-#systemctl restart mongod &>>$log_file
-#Status_Print $?
-
 - name: Copy  MongoDB repo file
   ansible.builtin.copy:
     src: mongo.repo
